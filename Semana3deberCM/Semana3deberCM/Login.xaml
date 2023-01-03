@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana3deberCM.Login">
+    <ContentPage.Content >
+        <StackLayout >
+            
+            <Label Text="Semana3" TextColor="Gold"/>
+            <Label Text="BIENVENIDO AL SISTEMA" FontSize="28" TextColor="Black" FontAttributes="Bold,Italic" HorizontalTextAlignment="Center"/>
+            <Image Source="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" />
+            
+            
+            <Grid VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                        
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+                        
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO" TextColor="Black" FontSize=" 18" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtusuario" Placeholder="Ingrese el usuario" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="CONTRASEÑA" TextColor="Black" FontSize=" 18" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtcontraseña" Placeholder="Ingrese la contraseña" Grid.Row="1" Grid.Column="1" IsPassword="True"/>
+
+            </Grid>
+
+            <Button x:Name="btnIngresar" Text="Iniciar Session" Clicked="btnIngresar_Clicked" BackgroundColor="Indigo" TextColor="White" FontAttributes="Bold"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
